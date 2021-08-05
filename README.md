@@ -1,6 +1,6 @@
 # Keycloak Docker
 
-Use following command for start docker as auth server
+Use following command for start keycloak docker as auth server
 
 ```docker
 docker run -d --name keycloak -p 8888:8080 \
