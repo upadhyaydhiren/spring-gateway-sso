@@ -17,21 +17,21 @@ spring:
       client:
         provider:
           keycloak:
-            token-uri: http://localhost:8080/auth/realms/master/protocol/openid-connect/token
-            authorization-uri: http://localhost:8080/auth/realms/master/protocol/openid-connect/auth
-            userinfo-uri: http://localhost:8080/auth/realms/master/protocol/openid-connect/userinfo
+            token-uri: http://localhost:8888/auth/realms/master/protocol/openid-connect/token
+            authorization-uri: http://localhost:8888/auth/realms/master/protocol/openid-connect/auth
+            userinfo-uri: http://localhost:8888/auth/realms/master/protocol/openid-connect/userinfo
             user-name-attribute: preferred_username
         registration:
           keycloak-with-test-scope:
             provider: keycloak
             client-id: spring-with-test-scope
-            client-secret: c6480137-1526-4c3e-aed3-295aabcb7609
+            client-secret: cb784dfa-3226-4b8e-82be-aa8434b313d2
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
           keycloak-without-test-scope:
             provider: keycloak
             client-id: spring-without-test-scope
-            client-secret: f6fc369d-49ce-4132-8282-5b5d413eba23
+            client-secret: 4dce16c9-0024-45dd-bfcf-7a48a346badb
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
 
